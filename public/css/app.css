@@ -1,0 +1,98 @@
+/* LAYOUT *************************************************************************************************************/
+
+html{
+    color: #333;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+nav{
+    background-color: #333;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    padding: 0 2rem;
+}
+
+nav img{
+    width: 8rem;
+    padding-top: 0.8rem;
+}
+
+main {
+    flex: 1 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+header h1{
+    font-size: 3rem;
+    margin: 1rem 0 0 0;
+}
+
+header h2{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+/* SECTION ************************************************************************************************************/
+
+section h3{
+    font-size: 1.5rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.3rem;
+    font-weight:bold;
+}
+
+section h3 a{
+    color: #333;
+}
+
+section h3 span{
+    font-weight:normal;
+    color: #444;
+}
+
+article h4{
+    font-size: 1.5rem;
+}
+
+article .card-info{
+    position: relative;
+    bottom: 3rem;
+    left: 1.5rem;
+}
+
+.card.horizontal.small .card-image{
+    max-height: 70%;
+}
+
+.card.horizontal.small .card-image img{
+    margin-top: 20%;
+}
+
+.card.horizontal.noticia{
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+
+}

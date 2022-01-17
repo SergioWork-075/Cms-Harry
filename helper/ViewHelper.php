@@ -16,4 +16,24 @@ class ViewHelper {
 
     }
 
+    public function redireccionConMensaje($ruta, $tipo, $texto){
+
+        $_SESSION['mensaje'] = array("tipo" => $tipo, "texto" => $texto);
+        header("Location:".$_SESSION["home"].$ruta);
+
+    }
+
+    public function permisos($permiso=null){
+
+
+        if (isset($_SESSION['usuario']) AND ($permiso == null OR $_SESSION[$permiso] == 1)){
+            return true;
+        }
+        else{
+            $this->redireccionConMensaje("admin","yellow", "No tienes permiso para realizar esta operación");
+        }
+
+
+    }
+
 }

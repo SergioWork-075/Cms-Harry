@@ -9,11 +9,12 @@ use App\Controller\AppController;
 use App\Controller\NoticiaController;
 use App\Controller\UsuarioController;
 
+echo password_hash("Madrid01",  PASSWORD_BCRYPT, ['cost'=>12]);
 /*
  * Asigno a sesión las rutas de las carpetas public y home, necesarias tanto para las rutas como para
  * poder enlazar imágenes y archivos css, js
  */
-$_SESSION['public'] = '/formacion/cms/public/';
+$_SESSION['public'] = '/cms/public/';
 $_SESSION['home'] = $_SESSION['public'].'index.php/';
 
 //Defino y llamo a la función que autocargará las clases cuando se instancien
