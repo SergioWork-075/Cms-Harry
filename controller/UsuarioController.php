@@ -233,5 +233,4 @@ class UsuarioController
 
     }
 
-
 }
